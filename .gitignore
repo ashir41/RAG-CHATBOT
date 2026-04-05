@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+venv/
+.env
+.DS_Store
+
+# Streamlit cache
+.streamlit/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PDFs or docs
+doc_files/CV_of_ASHIR.pdf
+
+# Ignore virtual environment
+ragenv/
+ragchat/
