@@ -59,7 +59,7 @@ def process_document(path):
         return context
 
     # ------------------- LLM -------------------
-    llm = ChatGroq(model="llama3-8b-8192")
+    llm = ChatGroq(model="openai/gpt-oss-20b")
 
     # ------------------- PROMPT -------------------
     system_prompt = """You are a helpful AI assistant.

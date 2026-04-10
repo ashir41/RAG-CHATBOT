@@ -5,7 +5,18 @@ A Streamlit-based Retrieval-Augmented Generation (RAG) chatbot for asking questi
 ## Project Overview
 
 This project lets you upload PDFs, index their text in a FAISS vector store, and query them with a conversational AI agent.
+<!-- ...existing content... -->
 
+## Demo
+
+Here's a screen recording demo of the RAG Chatbot in action:
+
+<video width="640" height="360" controls>
+  <source src="./recording/streamlit-app-2026-04-10-18-34-21.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<!-- ...existing content... -->
 The app is built with:
 - `streamlit` for the web interface
 - `langchain` and `langchain-community` for document loading, splitting, embeddings, and retrieval
