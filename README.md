@@ -12,16 +12,41 @@ Here's a screen recording demo of the RAG Chatbot in action:
 </video>
 
 <!-- ...existing content... -->
-## Project Overview
+## 📌 Project Overview
 
-This project lets you upload PDFs, index their text in a FAISS vector store, and query them with a conversational AI agent.
+This project implements a complete RAG pipeline:
 
-The app is built with:
-- `streamlit` for the web interface
-- `langchain` and `langchain-community` for document loading, splitting, embeddings, and retrieval
-- `FAISS` for vector search
-- `ChatGroq` for the LLM/chat agent
-- `sentence-transformers/all-MiniLM-L6-v2` for embeddings
+- Upload and process PDF documents  
+- Retrieve relevant context using vector search  
+- Generate answers using an LLM  
+- Evaluate responses using a grounding score  
+
+---
+
+## 🧠 Key Features
+
+### Document Understanding
+- Upload multiple PDFs
+- Automatic text extraction and chunking
+
+### Semantic Retrieval
+- Uses FAISS vector database
+- Retrieves top-k relevant chunks per query
+
+### AI-Powered Responses
+- LLM generates answers using retrieved context
+- Handles conversational queries with memory
+
+### Evaluation System
+- Computes Grounding Score (0–1)
+- Measures alignment between response and context
+- Labels responses: Strong / Moderate / Weak
+
+### Logging
+- Stores questions, answers, and scores
+- Export results as CSV
+
+---
 
 ## Folder Structure
 
@@ -30,7 +55,24 @@ The app is built with:
 - `doc_files/` - directory used to store uploaded PDF files
 - `ragchat/` - local virtual environment folder (not part of the app code)
 - `.env` - environment file loaded by the app for secrets/configuration
+---
 
+## 🔄 How It Works
+
+PDF → Chunk → Embedding → FAISS  
+User Query → Retrieve → Context → LLM → Answer → Evaluation  
+
+---
+
+## 📊 Evaluation
+
+Grounding Score interpretation:
+
+- 0.55 – 1.0 → Strong  
+- 0.30 – 0.55 → Moderate  
+- 0.00 – 0.30 → Weak  
+
+---
 ## How the App Works
 
 1. Upload PDF files through the Streamlit UI.
