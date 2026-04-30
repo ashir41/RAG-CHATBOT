@@ -1,3 +1,4 @@
+
 # RAG Chatbot
 
 A Streamlit-based Retrieval-Augmented Generation (RAG) chatbot for asking questions over uploaded PDF documents.
@@ -5,11 +6,8 @@ A Streamlit-based Retrieval-Augmented Generation (RAG) chatbot for asking questi
 ## Demo
 
 Here's a screen recording demo of the RAG Chatbot in action:
+https://github.com/user-attachments/assets/e4f01801-6dad-47ae-a60c-b7ef70a2c98c
 
-<video width="640" height="360" controls>
-  <source src="recording/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 <!-- ...existing content... -->
 ## 📌 Project Overview
